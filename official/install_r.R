@@ -1,0 +1,7 @@
+lib <- normalizePath("Rlib"); .libPaths(c(lib, .libPaths()))
+options(repos=c(CRAN="https://cloud.r-project.org"), Ncpus=8)
+if (!requireNamespace("BiocManager", quietly=TRUE)) install.packages("BiocManager", lib=lib)
+BiocManager::install(c("graph","RBGL","Rgraphviz"), lib=lib, update=FALSE, ask=FALSE)
+install.packages(c("pcalg","mvtnorm","weights","ks","e1071","DescTools","mipfp","mice","jsonlite"), lib=lib, type="binary")
+ip <- rownames(installed.packages(lib.loc=lib))
+print(c("pcalg","weights","ks","e1071","DescTools","mipfp") %in% ip)

@@ -1,0 +1,18 @@
+[project]
+name = "cyclic-missing-benchmark"
+version = "0.1.0"
+description = "巡回構造と欠測が併存するデータでの、因果探索の既存手法の検証コード"
+readme = "README.md"
+requires-python = ">=3.13"
+# 検証に使った版に固定する (公式実装と JDK・R の版は README を参照)
+dependencies = [
+    "causal-learn==0.1.4.8",
+    "jpype1==1.7.1",
+    "jupyter>=1.1.1",
+    "lingam==1.12.2",
+    "matplotlib==3.10.9",
+    "networkx==3.6.1",
+    "numpy==2.4.4",
+    "scikit-learn==1.8.0",
+    "scipy==1.17.1",
+]

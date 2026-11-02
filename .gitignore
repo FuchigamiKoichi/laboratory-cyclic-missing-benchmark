@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[oc]
+.venv/
+.ipynb_checkpoints/
+
+# 公式実装・JDK・R パッケージ (scripts/setup_official.sh で取得する)
+official/*
+!official/install_r.R
+
+# ノートブックが書き出すもの (ランナーのスクリプト、実験の結果、図)
+src/
+outputs/
+outputs_quick/
+figures/
+figures_quick/
+
+# OS
+.DS_Store
